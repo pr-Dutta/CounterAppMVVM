@@ -4,6 +4,10 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 
+
+// The CounterViewModel is the ViewModel of the MVVM and it's a class
+// means mediator between the View and the Model
+
 class CounterViewModel() : ViewModel() {
 
     private val _repository: CounterRepository = CounterRepository()
