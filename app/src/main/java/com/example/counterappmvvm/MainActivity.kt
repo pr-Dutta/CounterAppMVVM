@@ -33,9 +33,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    val counterViewModelInstance: CounterViewModel = viewModel()
+                    val viewModelInstance: CounterViewModel = viewModel()
 
-                    CounterApp(counterViewModel = counterViewModelInstance)
+                    CounterApp(viewModel = viewModelInstance)
                 }
             }
         }
@@ -43,7 +43,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun CounterApp(counterViewModel: CounterViewModel) {
+fun CounterApp(viewModel: CounterViewModel) {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
@@ -51,7 +51,7 @@ fun CounterApp(counterViewModel: CounterViewModel) {
     ) {
 
         Text(
-            text = "Counter Value : ${counterViewModel.count.value}",
+            text = "Counter Value : ${viewModel.count.value}",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold
         )
@@ -60,14 +60,14 @@ fun CounterApp(counterViewModel: CounterViewModel) {
 
         Row {
             Button(onClick = {
-                counterViewModel.increment()
+                viewModel.increment()
             }) {
                 Text(text = "Increment")
             }
 
             Spacer(modifier = Modifier.padding(16.dp))
             Button(onClick = {
-                counterViewModel.decrement()
+                viewModel.decrement()
             }) {
                 Text(text = "Decrement")
             }
