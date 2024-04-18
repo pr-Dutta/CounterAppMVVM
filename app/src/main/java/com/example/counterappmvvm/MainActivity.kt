@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
                 ) {
                     val viewModelInstance: CounterViewModel = viewModel()
 
-                    CounterApp(viewModel = viewModelInstance)
+                    MyCounterApp(viewModel = viewModelInstance)
                 }
             }
         }
@@ -48,7 +48,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun CounterApp(viewModel: CounterViewModel) {
+fun MyCounterApp(viewModel: CounterViewModel) {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
