@@ -57,7 +57,7 @@ fun MyCounterApp(viewModel: CounterViewModel) {
 
         Text(
             text = "Counter Value : ${viewModel.count.value}",
-            fontSize = 25.sp,
+            fontSize = 24.sp,
             fontWeight = FontWeight.Bold
         )
 
