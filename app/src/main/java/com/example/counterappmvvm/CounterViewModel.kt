@@ -17,15 +17,15 @@ class CounterViewModel() : ViewModel() {
     // Expose the _count as an immutable state
     val count: MutableState<Int> = _count
 
-//    fun increment() {
-//        _repository.incrementCounter()
-//        _count.value = _repository.getCounter().count
-//    }
-//
-//    fun decrement() {
-//        _repository.decrementCounter()
-//        _count.value = _repository.getCounter().count
-//    }
+    fun increment() {
+        _repository.incrementCounter()
+        _count.value = _repository.getCounter().count
+    }
+
+    fun decrement() {
+        _repository.decrementCounter()
+        _count.value = _repository.getCounter().count
+    }
 
 }
 
