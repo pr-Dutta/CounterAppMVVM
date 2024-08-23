@@ -16,18 +16,18 @@ data class CounterModel(var count: Int)
 // Repository:- is a class
 // Teh repository takes the data from tha actual data source
 // and it will provide those to the ViewModel and also maintain its functionality
-//class CounterRepository {
-//    private var _counter = CounterModel(0)
-//    fun getCounter() = _counter
-//
-//    fun incrementCounter() {
-//        _counter.count++
-//    }
-//
-//    fun decrementCounter() {
-//        _counter.count--
-//    }
-//}
+class CounterRepository {
+    private var _counter = CounterModel(0)
+    fun getCounter() = _counter
+
+    fun incrementCounter() {
+        _counter.count++
+    }
+
+    fun decrementCounter() {
+        _counter.count--
+    }
+}
 
 
 
