@@ -63,20 +63,20 @@ fun MyCounterApp(viewModel: CounterViewModel) {
 
         Spacer(modifier = Modifier.padding(16.dp))
 
-        Row {
-            Button(onClick = {
-                viewModel.increment()
-            }) {
-                Text(text = "Increment")
-            }
-
-            Spacer(modifier = Modifier.padding(16.dp))
-            Button(onClick = {
-                viewModel.decrement()
-            }) {
-                Text(text = "Decrement")
-            }
-        }
+//        Row {
+//            Button(onClick = {
+//                viewModel.increment()
+//            }) {
+//                Text(text = "Increment")
+//            }
+//
+//            Spacer(modifier = Modifier.padding(16.dp))
+//            Button(onClick = {
+//                viewModel.decrement()
+//            }) {
+//                Text(text = "Decrement")
+//            }
+//        }
     }
 }
 
