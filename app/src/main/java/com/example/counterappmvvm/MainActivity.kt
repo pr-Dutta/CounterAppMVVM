@@ -23,10 +23,8 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.counterappmvvm.ui.theme.CounterAppMVVMTheme
 
-
 // Here we can say the main activity is the View of the MVVM
 // means UI section
-
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -63,20 +61,20 @@ fun MyCounterApp(viewModel: CounterViewModel) {
 
         Spacer(modifier = Modifier.padding(16.dp))
 
-        Row {
-            Button(onClick = {
-                viewModel.increment()
-            }) {
-                Text(text = "Increment")
-            }
-
-            Spacer(modifier = Modifier.padding(16.dp))
-            Button(onClick = {
-                viewModel.decrement()
-            }) {
-                Text(text = "Decrement")
-            }
-        }
+//        Row {
+//            Button(onClick = {
+//                viewModel.increment()
+//            }) {
+//                Text(text = "Increment")
+//            }
+//
+//            Spacer(modifier = Modifier.padding(16.dp))
+//            Button(onClick = {
+//                viewModel.decrement()
+//            }) {
+//                Text(text = "Decrement")
+//            }
+//        }
     }
 }
 
