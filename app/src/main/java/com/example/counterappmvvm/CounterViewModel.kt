@@ -10,9 +10,9 @@ import androidx.lifecycle.ViewModel
 
 class CounterViewModel() : ViewModel() {
 
-//    private val _repository: CounterRepository = CounterRepository()
-//
-//    private val _count = mutableStateOf(_repository.getCounter().count)
+    private val _repository: CounterRepository = CounterRepository()
+
+    private val _count = mutableStateOf(_repository.getCounter().count)
 
     // Expose the _count as an immutable state
     val count: MutableState<Int> = _count
